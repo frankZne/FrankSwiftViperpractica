@@ -9,14 +9,33 @@
 /* Begin PBXBuildFile section */
 		C7B1EB0B2980267A00BBCE69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB0A2980267A00BBCE69 /* AppDelegate.swift */; };
 		C7B1EB0D2980267A00BBCE69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB0C2980267A00BBCE69 /* SceneDelegate.swift */; };
-		C7B1EB0F2980267A00BBCE69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB0E2980267A00BBCE69 /* ViewController.swift */; };
-		C7B1EB122980267A00BBCE69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B1EB102980267A00BBCE69 /* Main.storyboard */; };
 		C7B1EB152980267A00BBCE69 /* MovieTestViper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB132980267A00BBCE69 /* MovieTestViper.xcdatamodeld */; };
 		C7B1EB172980267B00BBCE69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B1EB162980267B00BBCE69 /* Assets.xcassets */; };
 		C7B1EB1A2980267B00BBCE69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B1EB182980267B00BBCE69 /* LaunchScreen.storyboard */; };
 		C7B1EB252980267B00BBCE69 /* MovieTestViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB242980267B00BBCE69 /* MovieTestViperTests.swift */; };
 		C7B1EB2F2980267B00BBCE69 /* MovieTestViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB2E2980267B00BBCE69 /* MovieTestViperUITests.swift */; };
 		C7B1EB312980267B00BBCE69 /* MovieTestViperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB302980267B00BBCE69 /* MovieTestViperUITestsLaunchTests.swift */; };
+		C7B1EB422980280F00BBCE69 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB412980280F00BBCE69 /* LoginView.swift */; };
+		C7B1EB442980282C00BBCE69 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB432980282C00BBCE69 /* LoginInteractor.swift */; };
+		C7B1EB462980283B00BBCE69 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB452980283B00BBCE69 /* LoginPresenter.swift */; };
+		C7B1EB482980285200BBCE69 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB472980285200BBCE69 /* LoginEntity.swift */; };
+		C7B1EB4A2980286500BBCE69 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB492980286500BBCE69 /* LoginRouter.swift */; };
+		C7B1EB4C2980288900BBCE69 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB4B2980288900BBCE69 /* LoginProtocols.swift */; };
+		C7B1EB4E2980296F00BBCE69 /* ServicesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB4D2980296F00BBCE69 /* ServicesAPI.swift */; };
+		C7B1EB502980298400BBCE69 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB4F2980298400BBCE69 /* ApiCall.swift */; };
+		C7B1EB54298033D800BBCE69 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB53298033D800BBCE69 /* Environment.swift */; };
+		C7B1EB572980347300BBCE69 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB562980347300BBCE69 /* UIImage+Extension.swift */; };
+		C7B1EB59298034C900BBCE69 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB58298034C900BBCE69 /* UIColor.swift */; };
+		C7B1EB5C298035F400BBCE69 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB5B298035F400BBCE69 /* Movie.swift */; };
+		C7B1EB5E2980361200BBCE69 /* MovieCategoryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB5D2980361200BBCE69 /* MovieCategoryFilter.swift */; };
+		C7B1EB602980363600BBCE69 /* MovieProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB5F2980363600BBCE69 /* MovieProfile.swift */; };
+		C7B1EB62298036E100BBCE69 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB61298036E100BBCE69 /* MovieDetail.swift */; };
+		C7B1EB65298083FF00BBCE69 /* MovieListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB64298083FF00BBCE69 /* MovieListDetailView.swift */; };
+		C7B1EB6729808B8700BBCE69 /* MovieListDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB6629808B8700BBCE69 /* MovieListDetailInteractor.swift */; };
+		C7B1EB6929808BAF00BBCE69 /* MovieListDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB6829808BAF00BBCE69 /* MovieListDetailPresenter.swift */; };
+		C7B1EB6B29808BCD00BBCE69 /* MovieListDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB6A29808BCD00BBCE69 /* MovieListDetailEntity.swift */; };
+		C7B1EB6D29808BE700BBCE69 /* MovieListDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB6C29808BE700BBCE69 /* MovieListDetailRouter.swift */; };
+		C7B1EB6F29808E2400BBCE69 /* MovieListDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B1EB6E29808E2400BBCE69 /* MovieListDetailProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +59,6 @@
 		C7B1EB072980267A00BBCE69 /* MovieTestViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieTestViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B1EB0A2980267A00BBCE69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B1EB0C2980267A00BBCE69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7B1EB0E2980267A00BBCE69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C7B1EB112980267A00BBCE69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7B1EB142980267A00BBCE69 /* MovieTestViper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieTestViper.xcdatamodel; sourceTree = "<group>"; };
 		C7B1EB162980267B00BBCE69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7B1EB192980267B00BBCE69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +68,29 @@
 		C7B1EB2A2980267B00BBCE69 /* MovieTestViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieTestViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B1EB2E2980267B00BBCE69 /* MovieTestViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTestViperUITests.swift; sourceTree = "<group>"; };
 		C7B1EB302980267B00BBCE69 /* MovieTestViperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTestViperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7B1EB412980280F00BBCE69 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C7B1EB432980282C00BBCE69 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		C7B1EB452980283B00BBCE69 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C7B1EB472980285200BBCE69 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		C7B1EB492980286500BBCE69 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		C7B1EB4B2980288900BBCE69 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		C7B1EB4D2980296F00BBCE69 /* ServicesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAPI.swift; sourceTree = "<group>"; };
+		C7B1EB4F2980298400BBCE69 /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		C7B1EB5129802A5500BBCE69 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		C7B1EB5229802A7100BBCE69 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		C7B1EB53298033D800BBCE69 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		C7B1EB562980347300BBCE69 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		C7B1EB58298034C900BBCE69 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C7B1EB5B298035F400BBCE69 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C7B1EB5D2980361200BBCE69 /* MovieCategoryFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCategoryFilter.swift; sourceTree = "<group>"; };
+		C7B1EB5F2980363600BBCE69 /* MovieProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProfile.swift; sourceTree = "<group>"; };
+		C7B1EB61298036E100BBCE69 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		C7B1EB64298083FF00BBCE69 /* MovieListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDetailView.swift; sourceTree = "<group>"; };
+		C7B1EB6629808B8700BBCE69 /* MovieListDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDetailInteractor.swift; sourceTree = "<group>"; };
+		C7B1EB6829808BAF00BBCE69 /* MovieListDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDetailPresenter.swift; sourceTree = "<group>"; };
+		C7B1EB6A29808BCD00BBCE69 /* MovieListDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDetailEntity.swift; sourceTree = "<group>"; };
+		C7B1EB6C29808BE700BBCE69 /* MovieListDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDetailRouter.swift; sourceTree = "<group>"; };
+		C7B1EB6E29808E2400BBCE69 /* MovieListDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDetailProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +141,13 @@
 		C7B1EB092980267A00BBCE69 /* MovieTestViper */ = {
 			isa = PBXGroup;
 			children = (
+				C7B1EB5A298035E000BBCE69 /* Models */,
+				C7B1EB552980345400BBCE69 /* Utils */,
+				C7B1EB3F298026D000BBCE69 /* Config */,
+				C7B1EB3E298026C400BBCE69 /* API */,
+				C7B1EB3D298026B000BBCE69 /* Modules */,
 				C7B1EB0A2980267A00BBCE69 /* AppDelegate.swift */,
 				C7B1EB0C2980267A00BBCE69 /* SceneDelegate.swift */,
-				C7B1EB0E2980267A00BBCE69 /* ViewController.swift */,
-				C7B1EB102980267A00BBCE69 /* Main.storyboard */,
 				C7B1EB162980267B00BBCE69 /* Assets.xcassets */,
 				C7B1EB182980267B00BBCE69 /* LaunchScreen.storyboard */,
 				C7B1EB1B2980267B00BBCE69 /* Info.plist */,
@@ -128,6 +171,80 @@
 				C7B1EB302980267B00BBCE69 /* MovieTestViperUITestsLaunchTests.swift */,
 			);
 			path = MovieTestViperUITests;
+			sourceTree = "<group>";
+		};
+		C7B1EB3D298026B000BBCE69 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C7B1EB632980394700BBCE69 /* MovieListDetail */,
+				C7B1EB40298027ED00BBCE69 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C7B1EB3E298026C400BBCE69 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C7B1EB4D2980296F00BBCE69 /* ServicesAPI.swift */,
+				C7B1EB4F2980298400BBCE69 /* ApiCall.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C7B1EB3F298026D000BBCE69 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C7B1EB5129802A5500BBCE69 /* Debug.xcconfig */,
+				C7B1EB5229802A7100BBCE69 /* Release.xcconfig */,
+				C7B1EB53298033D800BBCE69 /* Environment.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C7B1EB40298027ED00BBCE69 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C7B1EB412980280F00BBCE69 /* LoginView.swift */,
+				C7B1EB432980282C00BBCE69 /* LoginInteractor.swift */,
+				C7B1EB452980283B00BBCE69 /* LoginPresenter.swift */,
+				C7B1EB472980285200BBCE69 /* LoginEntity.swift */,
+				C7B1EB492980286500BBCE69 /* LoginRouter.swift */,
+				C7B1EB4B2980288900BBCE69 /* LoginProtocols.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C7B1EB552980345400BBCE69 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C7B1EB562980347300BBCE69 /* UIImage+Extension.swift */,
+				C7B1EB58298034C900BBCE69 /* UIColor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C7B1EB5A298035E000BBCE69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7B1EB5B298035F400BBCE69 /* Movie.swift */,
+				C7B1EB5D2980361200BBCE69 /* MovieCategoryFilter.swift */,
+				C7B1EB5F2980363600BBCE69 /* MovieProfile.swift */,
+				C7B1EB61298036E100BBCE69 /* MovieDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7B1EB632980394700BBCE69 /* MovieListDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C7B1EB64298083FF00BBCE69 /* MovieListDetailView.swift */,
+				C7B1EB6629808B8700BBCE69 /* MovieListDetailInteractor.swift */,
+				C7B1EB6829808BAF00BBCE69 /* MovieListDetailPresenter.swift */,
+				C7B1EB6A29808BCD00BBCE69 /* MovieListDetailEntity.swift */,
+				C7B1EB6C29808BE700BBCE69 /* MovieListDetailRouter.swift */,
+				C7B1EB6E29808E2400BBCE69 /* MovieListDetailProtocols.swift */,
+			);
+			path = MovieListDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +353,6 @@
 			files = (
 				C7B1EB1A2980267B00BBCE69 /* LaunchScreen.storyboard in Resources */,
 				C7B1EB172980267B00BBCE69 /* Assets.xcassets in Resources */,
-				C7B1EB122980267A00BBCE69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +377,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B1EB0F2980267A00BBCE69 /* ViewController.swift in Sources */,
+				C7B1EB572980347300BBCE69 /* UIImage+Extension.swift in Sources */,
+				C7B1EB59298034C900BBCE69 /* UIColor.swift in Sources */,
+				C7B1EB4C2980288900BBCE69 /* LoginProtocols.swift in Sources */,
+				C7B1EB62298036E100BBCE69 /* MovieDetail.swift in Sources */,
+				C7B1EB54298033D800BBCE69 /* Environment.swift in Sources */,
+				C7B1EB602980363600BBCE69 /* MovieProfile.swift in Sources */,
+				C7B1EB462980283B00BBCE69 /* LoginPresenter.swift in Sources */,
+				C7B1EB4E2980296F00BBCE69 /* ServicesAPI.swift in Sources */,
+				C7B1EB6B29808BCD00BBCE69 /* MovieListDetailEntity.swift in Sources */,
 				C7B1EB152980267A00BBCE69 /* MovieTestViper.xcdatamodeld in Sources */,
+				C7B1EB65298083FF00BBCE69 /* MovieListDetailView.swift in Sources */,
+				C7B1EB6D29808BE700BBCE69 /* MovieListDetailRouter.swift in Sources */,
+				C7B1EB6929808BAF00BBCE69 /* MovieListDetailPresenter.swift in Sources */,
+				C7B1EB502980298400BBCE69 /* ApiCall.swift in Sources */,
+				C7B1EB5E2980361200BBCE69 /* MovieCategoryFilter.swift in Sources */,
 				C7B1EB0B2980267A00BBCE69 /* AppDelegate.swift in Sources */,
+				C7B1EB422980280F00BBCE69 /* LoginView.swift in Sources */,
+				C7B1EB442980282C00BBCE69 /* LoginInteractor.swift in Sources */,
+				C7B1EB482980285200BBCE69 /* LoginEntity.swift in Sources */,
+				C7B1EB6729808B8700BBCE69 /* MovieListDetailInteractor.swift in Sources */,
+				C7B1EB4A2980286500BBCE69 /* LoginRouter.swift in Sources */,
+				C7B1EB6F29808E2400BBCE69 /* MovieListDetailProtocols.swift in Sources */,
 				C7B1EB0D2980267A00BBCE69 /* SceneDelegate.swift in Sources */,
+				C7B1EB5C298035F400BBCE69 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +437,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C7B1EB102980267A00BBCE69 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7B1EB112980267A00BBCE69 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7B1EB182980267B00BBCE69 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -322,6 +450,7 @@
 /* Begin XCBuildConfiguration section */
 		C7B1EB322980267B00BBCE69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B1EB5129802A5500BBCE69 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -382,6 +511,7 @@
 		};
 		C7B1EB332980267B00BBCE69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B1EB5229802A7100BBCE69 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -436,6 +566,7 @@
 		};
 		C7B1EB352980267B00BBCE69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B1EB5129802A5500BBCE69 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,7 +577,6 @@
 				INFOPLIST_FILE = MovieTestViper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,6 +594,7 @@
 		};
 		C7B1EB362980267B00BBCE69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B1EB5229802A7100BBCE69 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,7 +605,6 @@
 				INFOPLIST_FILE = MovieTestViper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,6 +622,7 @@
 		};
 		C7B1EB382980267B00BBCE69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B1EB5129802A5500BBCE69 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +643,7 @@
 		};
 		C7B1EB392980267B00BBCE69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B1EB5229802A7100BBCE69 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +664,7 @@
 		};
 		C7B1EB3B2980267B00BBCE69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B1EB5129802A5500BBCE69 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +683,7 @@
 		};
 		C7B1EB3C2980267B00BBCE69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B1EB5229802A7100BBCE69 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
