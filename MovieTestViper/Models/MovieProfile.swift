@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct MovieProfile {
+    let titleName: String
+    let movieDate: String
+    let movieImageName: String
+    let movieDescription: String
+}

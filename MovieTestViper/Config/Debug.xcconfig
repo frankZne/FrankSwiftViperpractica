@@ -7,3 +7,15 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+
+// Debug.xcconfig
+// Server URL
+ROOT_URL = https:/$()/api.themoviedb.org/3
+
+// Keys
+API_KEY = fcd6ca851e37872c959f9f414a0753b9
+
+// App Settings
+APP_NAME = MovieTestViper (dev)
+APP_BUNDLE_ID = FrankAguilar.MovieTestViper
