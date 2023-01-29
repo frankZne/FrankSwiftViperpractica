@@ -12,8 +12,8 @@ import UIKit
 class LoginView: UIViewController {
     
     var presenter: LoginPresenterProtocol?
+    let loader = LoadingIndicator()
     let color = UIColor.black
-    //var movement: InvestmentAccountDetail?
     
     private let loginContentView: UIView = {
         let view = UIView()
@@ -78,28 +78,13 @@ class LoginView: UIViewController {
     }
     
     @objc private func action() {
-        guard let userName = userTextField.text, let password = passTextField.text else { return }
-        //viewModel.username = userName
-        //viewModel.password = password
-        /*self.viewModel.login { [weak self] (result) in
-            DispatchQueue.main.async {
-                self?.loadingIndicator.startAnimating()
-            }
-            if result {
-                let vc = MovieListDetailViewController()
-                DispatchQueue.main.async {
-                    self?.navigationController?.pushViewController(vc, animated: true)
-
-                    self?.loadingIndicator.stopAnimating()
-                }
-            } else {
-                DispatchQueue.main.async {
-                    self?.showAlert(title: "Error", message: "Error de Contraseña")
-                }
-            }
-        }*/
-        self.presenter?.getLogin(username: userName, password: password)
-        
+        if userTextField.text == "" || passTextField.text == "" {
+            showAlert(title: "", message: "Datos invalidos")
+        }else {
+            guard let userName = userTextField.text, let password = passTextField.text else { return }
+            self.presenter?.getLogin(username: userName, password: password)
+            self.loader.setLoadingIndicator(center: self.logoImageView.center)
+        }
     }
     
     func setUpAutoLayout(){
@@ -109,12 +94,13 @@ class LoginView: UIViewController {
         myLayer.frame = CGRect(x: -20, y: -27, width: self.view.bounds.width, height: self.view.bounds.height)
         myLayer.contents = myImage
         loginContentView.layer.addSublayer(myLayer)
-        
         loginContentView.addSubview(logoImageView)
         loginContentView.addSubview(userTextField)
         loginContentView.addSubview(passTextField)
         loginContentView.addSubview(btnLogin)
         view.addSubview(loginContentView)
+        self.view.addSubview(loader)
+
 
         NSLayoutConstraint.activate([
             loginContentView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
@@ -156,19 +142,22 @@ class LoginView: UIViewController {
 }
 
 extension LoginView: LoginViewProtocol {
-    func loginViewSuccess() {
-        print("Sucess")
-     /*   let vc = MovieListDetailViewController()
+    func loginViewFailure(message: String) {
+        self.loader.stopLoadingIndicator()
         DispatchQueue.main.async {
-            self.navigationController?.pushViewController(vc, animated: true)
-
-            self.loadingIndicator.stopAnimating()
-        }*/
-    }
-    
-    func loginViewFailure() {
+            self.showAlert(title: "", message: message)
+        }
         print("Failure")
     }
     
+    func loginViewSuccess() {
+        print("Sucess")
+        self.loader.stopLoadingIndicator()
+        let vc = MovieListDetailRouter.createModule()
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
+
 }

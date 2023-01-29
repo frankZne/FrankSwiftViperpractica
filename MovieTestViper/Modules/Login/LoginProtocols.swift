@@ -14,7 +14,7 @@ protocol LoginViewProtocol: class {
     //func hideLoader()
 
     func loginViewSuccess()
-    func loginViewFailure()
+    func loginViewFailure(message: String)
 }
 
 protocol LoginPresenterProtocol: class {
@@ -34,7 +34,7 @@ protocol LoginInteractorProtocol: class {
 protocol LoginOutputInteractorProtocol: class {
     // Interactor -> PresenterOutput
     func onLoginSuccess()
-    func onLoginFailure()
+    func onLoginFailure(message: String)
 }
 
 protocol LoginRouterProtocol: class {

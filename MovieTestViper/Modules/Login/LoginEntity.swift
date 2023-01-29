@@ -9,10 +9,12 @@ import Foundation
 
 struct LoginResponse: Codable {
     let success: Bool?
+    let statusMessage: String?
     let expiresAt, requestToken: String?
 
     enum CodingKeys: String, CodingKey {
         case success
+        case statusMessage = "status_message"
         case expiresAt = "expires_at"
         case requestToken = "request_token"
     }
@@ -101,3 +103,5 @@ struct Tmdb: Codable {
     }
     
 }
+
+

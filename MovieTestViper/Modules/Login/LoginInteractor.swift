@@ -29,28 +29,16 @@ class LoginInteractor: LoginInteractorProtocol {
                                 DispatchQueue.main.async {
                                     self.requestSessionId(loginRequestToken: loginRequestToken)
                                 }
-                               /* ServicesAPI.shared.getSessionId(requestToken: loginRequestToken) { result in
-                                    switch result{
-                                    case .success(let response):
-                                        self.userdefaults.set(response.sessionId, forKey: "sessionId")
-                                        //self.presenter?.onLoginSuccess()
-                                    case .failure(let error):
-                                        print(error)
-                                        //completion(false)
-                                        self.presenter?.onLoginFailure()
-                                    }
-                                }*/
                             case .failure(let error):
+                                print(response)
                                 print(error)
-                                //completion(false)
-                                self.presenter?.onLoginFailure()
+                                self.presenter?.onLoginFailure(message: error.localizedDescription)
                             }
                         }
                     }
                 case .failure(let error):
                 print(error)
-                    //completion(false)
-                self.presenter?.onLoginFailure()
+                self.presenter?.onLoginFailure(message: error.localizedDescription)
             }
         }
 
@@ -68,7 +56,7 @@ class LoginInteractor: LoginInteractorProtocol {
         case .failure(let error):
             print(error)
             //completion(false)
-            self.presenter?.onLoginFailure()
+            self.presenter?.onLoginFailure(message: error.localizedDescription)
         }
     }
     }

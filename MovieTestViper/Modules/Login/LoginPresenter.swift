@@ -22,15 +22,14 @@ class LoginPresenter: LoginPresenterProtocol  {
 }
 
 extension LoginPresenter: LoginOutputInteractorProtocol {
+    func onLoginFailure(message: String) {
+        print("")
+        self.view?.loginViewFailure(message: message)
+    }
+    
     func onLoginSuccess() {
         print("success")
         self.view?.loginViewSuccess()
     }
-    
-    func onLoginFailure() {
-        print("")
-        self.view?.loginViewFailure()
-    }
-    
     
 }
