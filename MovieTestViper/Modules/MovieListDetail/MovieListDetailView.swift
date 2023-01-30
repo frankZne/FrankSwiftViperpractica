@@ -89,8 +89,7 @@ class MovieListDetailView: UIViewController {
     }
     
     @objc func buttonTopBar() {
-       /* let vc = ProfileViewController()
-        present(vc, animated: true)*/
+        self.presenter?.gotoProfilePresenter()
     }
     
     private func setupLayouts() {

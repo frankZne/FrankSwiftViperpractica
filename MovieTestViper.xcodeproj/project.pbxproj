@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70EBF692988413B00411461 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EBF682988413B00411461 /* ProfileView.swift */; };
+		C70EBF6B298844D600411461 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EBF6A298844D600411461 /* ProfileInteractor.swift */; };
+		C70EBF6D298844EF00411461 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EBF6C298844EF00411461 /* ProfilePresenter.swift */; };
+		C70EBF6F2988450A00411461 /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EBF6E2988450A00411461 /* ProfileEntity.swift */; };
+		C70EBF712988452500411461 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EBF702988452500411461 /* ProfileRouter.swift */; };
+		C70EBF732988453B00411461 /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EBF722988453B00411461 /* ProfileProtocols.swift */; };
 		C71E4A402983058100C88FB6 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E4A3F2983058100C88FB6 /* MovieListCell.swift */; };
 		C71E4A422983059300C88FB6 /* CategoryFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E4A412983059300C88FB6 /* CategoryFilterCell.swift */; };
 		C71E4A4429831E3400C88FB6 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E4A4329831E3400C88FB6 /* CircularProgressView.swift */; };
@@ -65,6 +71,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C70EBF682988413B00411461 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C70EBF6A298844D600411461 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		C70EBF6C298844EF00411461 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		C70EBF6E2988450A00411461 /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
+		C70EBF702988452500411461 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		C70EBF722988453B00411461 /* ProfileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocols.swift; sourceTree = "<group>"; };
 		C71E4A3F2983058100C88FB6 /* MovieListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
 		C71E4A412983059300C88FB6 /* CategoryFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterCell.swift; sourceTree = "<group>"; };
 		C71E4A4329831E3400C88FB6 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
@@ -136,6 +148,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70EBF6729883A8F00411461 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C70EBF682988413B00411461 /* ProfileView.swift */,
+				C70EBF6A298844D600411461 /* ProfileInteractor.swift */,
+				C70EBF6C298844EF00411461 /* ProfilePresenter.swift */,
+				C70EBF6E2988450A00411461 /* ProfileEntity.swift */,
+				C70EBF702988452500411461 /* ProfileRouter.swift */,
+				C70EBF722988453B00411461 /* ProfileProtocols.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		C71E4A3E2983050400C88FB6 /* cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +241,7 @@
 		C7B1EB3D298026B000BBCE69 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C70EBF6729883A8F00411461 /* Profile */,
 				C73132BD298705BA00DB09B8 /* MovieDetail */,
 				C7B1EB632980394700BBCE69 /* MovieListDetail */,
 				C7B1EB40298027ED00BBCE69 /* Login */,
@@ -420,12 +446,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70EBF712988452500411461 /* ProfileRouter.swift in Sources */,
 				C7B1EB572980347300BBCE69 /* UIImage+Extension.swift in Sources */,
 				C71E4A4429831E3400C88FB6 /* CircularProgressView.swift in Sources */,
 				C73132C32987061C00DB09B8 /* MovieDetailInteractor.swift in Sources */,
+				C70EBF732988453B00411461 /* ProfileProtocols.swift in Sources */,
 				C7B1EB59298034C900BBCE69 /* UIColor.swift in Sources */,
 				C7B1EB4C2980288900BBCE69 /* LoginProtocols.swift in Sources */,
 				C7B1EB62298036E100BBCE69 /* MovieDetail.swift in Sources */,
+				C70EBF6F2988450A00411461 /* ProfileEntity.swift in Sources */,
 				C73132C9298713EA00DB09B8 /* MovieDetailRouter.swift in Sources */,
 				C7B1EB54298033D800BBCE69 /* Environment.swift in Sources */,
 				C73132C12987060A00DB09B8 /* MovieDetailView.swift in Sources */,
@@ -434,6 +463,7 @@
 				C7B1EB4E2980296F00BBCE69 /* ServicesAPI.swift in Sources */,
 				C7B1EB6B29808BCD00BBCE69 /* MovieListDetailEntity.swift in Sources */,
 				C7B1EB152980267A00BBCE69 /* MovieTestViper.xcdatamodeld in Sources */,
+				C70EBF6D298844EF00411461 /* ProfilePresenter.swift in Sources */,
 				C7B1EB65298083FF00BBCE69 /* MovieListDetailView.swift in Sources */,
 				C7B1EB6D29808BE700BBCE69 /* MovieListDetailRouter.swift in Sources */,
 				C73132CB2987767200DB09B8 /* MovieDetailProtocols.swift in Sources */,
@@ -446,6 +476,8 @@
 				C7B1EB442980282C00BBCE69 /* LoginInteractor.swift in Sources */,
 				C7B1EB482980285200BBCE69 /* LoginEntity.swift in Sources */,
 				C7B1EB6729808B8700BBCE69 /* MovieListDetailInteractor.swift in Sources */,
+				C70EBF692988413B00411461 /* ProfileView.swift in Sources */,
+				C70EBF6B298844D600411461 /* ProfileInteractor.swift in Sources */,
 				C71E4A402983058100C88FB6 /* MovieListCell.swift in Sources */,
 				C73132C52987063300DB09B8 /* MovieDetailPresenter.swift in Sources */,
 				C7B1EB4A2980286500BBCE69 /* LoginRouter.swift in Sources */,

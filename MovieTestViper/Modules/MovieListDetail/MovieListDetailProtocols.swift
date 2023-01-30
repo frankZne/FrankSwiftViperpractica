@@ -24,6 +24,7 @@ protocol MovieListDetailPresenterProtocol: AnyObject {
     var router: MovieListDetailRouterProtocol? {get set}
     func getMovieList(filter: MovieCategoryFilter)
     func goToMovieDetailPresenter(idMovie: Int)
+    func gotoProfilePresenter()
     var moviesList: [Movie]? {get set}
 
 }
@@ -44,4 +45,5 @@ protocol MovieListDetailRouterProtocol: AnyObject {
     //Presenter -> Wireframe
     static func createModule() -> UIViewController
     func gotoMovieDetail(view: UIViewController, idMovie: Int)
+    func gotoProfile(view: UIViewController)
 }

@@ -30,6 +30,7 @@ class MovieDetailView: UIViewController {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.backgroundColor = .white
+        image.contentMode = .scaleAspectFill
         return image
     }()
 
@@ -37,6 +38,7 @@ class MovieDetailView: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Movie Title"
+        label.font = UIFont(name: "MarkerFelt-Thin", size: 26)
         label.textColor = .white
         return label
     }()
@@ -46,7 +48,7 @@ class MovieDetailView: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Movie Description"
         label.textColor = .white
-        label.numberOfLines = 4
+        label.numberOfLines = 7
         return label
     }()
 
@@ -70,7 +72,6 @@ class MovieDetailView: UIViewController {
     func setupLayouts() {
         NSLayoutConstraint.activate([
 
-            // put containerView1 half of the screen and containerView2 the other half
             contanerView.topAnchor.constraint(equalTo: view.topAnchor),
             contanerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             contanerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -86,7 +87,7 @@ class MovieDetailView: UIViewController {
             movieImage.trailingAnchor.constraint(equalTo: contanerView.trailingAnchor),
             movieImage.bottomAnchor.constraint(equalTo: contanerView.bottomAnchor),
 
-            movieTitle.topAnchor.constraint(equalTo: containerView2.topAnchor, constant: 2),
+            movieTitle.topAnchor.constraint(equalTo: containerView2.topAnchor, constant: 12),
             movieTitle.leadingAnchor.constraint(equalTo: containerView2.leadingAnchor, constant: 20),
             movieTitle.trailingAnchor.constraint(equalTo: containerView2.trailingAnchor, constant: -20),
             movieTitle.heightAnchor.constraint(equalToConstant: 20),

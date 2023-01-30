@@ -28,4 +28,9 @@ class MovieListDetailRouter: MovieListDetailRouterProtocol {
         view.navigationController?.pushViewController(router, animated: true)
 
     }
+    
+    func gotoProfile(view: UIViewController) {
+        let router = ProfileRouter.createModule()
+        view.navigationController?.pushViewController(router, animated: true)
+    }
 }

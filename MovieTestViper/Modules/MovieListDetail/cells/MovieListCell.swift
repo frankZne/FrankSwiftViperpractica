@@ -78,7 +78,7 @@ final class MovieListCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             movieImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             movieImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            movieImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            movieImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
             movieImageView.heightAnchor.constraint(equalToConstant: Constants.imageHeight)
         ])
         
