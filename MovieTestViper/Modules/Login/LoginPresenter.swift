@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 class LoginPresenter: LoginPresenterProtocol  {
@@ -18,6 +19,11 @@ class LoginPresenter: LoginPresenterProtocol  {
         interactor?.requestLogin(username: username, password: password)
     }
     
+    func goToMovieList()  {
+        if let viewController = view as? LoginView {
+            router?.goToMovieListDetail(view: viewController)
+        }
+    }
     
 }
 

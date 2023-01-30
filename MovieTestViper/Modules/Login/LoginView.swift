@@ -153,9 +153,9 @@ extension LoginView: LoginViewProtocol {
     func loginViewSuccess() {
         print("Sucess")
         self.loader.stopLoadingIndicator()
-        let vc = MovieListDetailRouter.createModule()
         DispatchQueue.main.async {
-            self.navigationController?.pushViewController(vc, animated: true)
+           // self.navigationController?.pushViewController(vc, animated: true)
+            self.presenter?.goToMovieList()
         }
     }
     

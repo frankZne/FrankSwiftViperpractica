@@ -22,4 +22,10 @@ class MovieListDetailRouter: MovieListDetailRouterProtocol {
         view.presenter = presenter
         return view
     }
+    
+    func gotoMovieDetail(view: UIViewController, idMovie: Int) {
+        let router = MovieDetailRouter.createModule(idMovie: idMovie)
+        view.navigationController?.pushViewController(router, animated: true)
+
+    }
 }

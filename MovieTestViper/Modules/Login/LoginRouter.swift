@@ -10,6 +10,7 @@ import UIKit
 
 
 class LoginRouter: LoginRouterProtocol {
+
     class func createModule() -> UIViewController {
         let view = LoginView()
         let router: LoginRouterProtocol = LoginRouter()
@@ -22,6 +23,12 @@ class LoginRouter: LoginRouterProtocol {
         interactor.presenter = presenter
         view.presenter = presenter
         return view
+    }
+    
+    func goToMovieListDetail(view: UIViewController){        
+        let movementDetail = MovieListDetailRouter.createModule()
+        view.navigationController?.pushViewController(movementDetail, animated: true)
+        
     }
     
     

@@ -3,4 +3,69 @@
    uuid = "04B772C7-1BF0-4E47-9D02-AD6101C75890"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95512041-A280-41A1-BAD9-62B07EA43936"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieTestViper/Modules/MovieDetail/MovieDetailInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getMovieDetail(movieId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "95512041-A280-41A1-BAD9-62B07EA43936 - 76d3d29f133d620c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;MovieTestViper.MovieDetail, MovieTestViper.APIServiceError&gt;) -&gt; () in MovieTestViper.MovieDetailInteractor.getMovieDetail(movieId: Swift.Int) -&gt; ()"
+                  moduleName = "MovieTestViper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/franciscorafaelaguilarlugo/Desktop/MovieViper/MovieTestViper/MovieTestViper/Modules/MovieDetail/MovieDetailInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "95512041-A280-41A1-BAD9-62B07EA43936 - d2d0466cf6ea0da3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[3] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[3] = [Closure Propagated : closure #1 (Swift.Result&lt;MovieTestViper.MovieDetail, MovieTestViper.APIServiceError&gt;) -&gt; () in MovieTestViper.MovieDetailInteractor.getMovieDetail(movieId: Swift.Int) -&gt; (), Argument Types : [{ var weak Swift.Optional&lt;MovieTestViper.MovieDetailInteractor&gt; }]&gt; of function signature specialization &lt;Arg[2] = [Closure Propagated : reabstraction thunk helper from @escaping @callee_guaranteed (@guaranteed Swift.Result&lt;MovieTestViper.MovieDetail, MovieTestViper.APIServiceError&gt;) -&gt; () to @escaping @callee_guaranteed (@in_guaranteed Swift.Result&lt;MovieTestViper.MovieDetail, MovieTestViper.APIServiceError&gt;) -&gt; (), Argument Types : [@escaping @callee_guaranteed (@guaranteed Swift.Result&lt;MovieTestViper.MovieDetail, MovieTestViper.APIServiceError&gt;) -&gt; ()]&gt; of generic specialization &lt;MovieTestViper.MovieDetail&gt; of MovieTestViper.ApiCall.fetchResources&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(url: Foundation.URL, queryParameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, completion: (Swift.Result&lt;&#x3c4;_0_0, MovieTestViper.APIServiceError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MovieTestViper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/franciscorafaelaguilarlugo/Desktop/MovieViper/MovieTestViper/MovieTestViper/Modules/MovieDetail/MovieDetailInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "95512041-A280-41A1-BAD9-62B07EA43936 - d2d0466cf6ea0da3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[3] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[3] = [Closure Propagated : closure #1 (Swift.Result&lt;MovieTestViper.MovieDetail, MovieTestViper.APIServiceError&gt;) -&gt; () in MovieTestViper.MovieDetailInteractor.getMovieDetail(movieId: Swift.Int) -&gt; (), Argument Types : [{ var weak Swift.Optional&lt;MovieTestViper.MovieDetailInteractor&gt; }]&gt; of function signature specialization &lt;Arg[2] = [Closure Propagated : reabstraction thunk helper from @escaping @callee_guaranteed (@guaranteed Swift.Result&lt;MovieTestViper.MovieDetail, MovieTestViper.APIServiceError&gt;) -&gt; () to @escaping @callee_guaranteed (@in_guaranteed Swift.Result&lt;MovieTestViper.MovieDetail, MovieTestViper.APIServiceError&gt;) -&gt; (), Argument Types : [@escaping @callee_guaranteed (@guaranteed Swift.Result&lt;MovieTestViper.MovieDetail, MovieTestViper.APIServiceError&gt;) -&gt; ()]&gt; of generic specialization &lt;MovieTestViper.MovieDetail&gt; of MovieTestViper.ApiCall.fetchResources&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(url: Foundation.URL, queryParameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, completion: (Swift.Result&lt;&#x3c4;_0_0, MovieTestViper.APIServiceError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MovieTestViper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/franciscorafaelaguilarlugo/Desktop/MovieViper/MovieTestViper/MovieTestViper/Modules/MovieDetail/MovieDetailInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "756">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

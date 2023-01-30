@@ -168,10 +168,8 @@ extension MovieListDetailView: UICollectionViewDataSource {
             self.presenter?.getMovieList(filter: profiles2[indexPath.item])
             
         } else {
-           /*
-            let vc = SelectedMovieDetailViewController()
-            vc.id = presenter?.moviesList?[indexPath.row].id
-            navigationController?.pushViewController(vc, animated: true)*/
+
+            self.presenter?.goToMovieDetailPresenter(idMovie: presenter?.moviesList?[indexPath.row].id ?? 0)
         }
         
     }

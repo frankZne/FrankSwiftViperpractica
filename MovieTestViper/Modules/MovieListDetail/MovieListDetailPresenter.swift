@@ -18,6 +18,12 @@ class MovieListDetailPresenter: MovieListDetailPresenterProtocol {
     func getMovieList(filter: MovieCategoryFilter) {
         interactor?.getMovies(filter: filter)
     }
+    
+    func goToMovieDetailPresenter(idMovie: Int){
+        if let viewController = view as? MovieListDetailView {
+            router?.gotoMovieDetail(view: viewController, idMovie: idMovie)
+        }
+    }
 }
 
 extension MovieListDetailPresenter: MovieListDetailOutputInteractorProtocol {

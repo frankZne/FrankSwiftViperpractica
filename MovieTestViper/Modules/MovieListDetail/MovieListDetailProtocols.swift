@@ -8,7 +8,7 @@
 import UIKit
 
 
-protocol MovieListDetailViewProtocol: class {
+protocol MovieListDetailViewProtocol: AnyObject {
     // Presenter -> View
     //func showLoader()
     //func hideLoader()
@@ -17,29 +17,31 @@ protocol MovieListDetailViewProtocol: class {
     func getMoviesRequestFailure()
 }
 
-protocol MovieListDetailPresenterProtocol: class {
+protocol MovieListDetailPresenterProtocol: AnyObject {
     // View -> Presenter
     var interactor: MovieListDetailInteractorProtocol? {get set}
     var view: MovieListDetailViewProtocol? {get set}
     var router: MovieListDetailRouterProtocol? {get set}
     func getMovieList(filter: MovieCategoryFilter)
+    func goToMovieDetailPresenter(idMovie: Int)
     var moviesList: [Movie]? {get set}
 
 }
 
-protocol MovieListDetailInteractorProtocol: class {
+protocol MovieListDetailInteractorProtocol: AnyObject {
     // Presenter -> Interactor
     var presenter: MovieListDetailOutputInteractorProtocol? {get set}
     func getMovies(filter: MovieCategoryFilter)
 }
 
-protocol MovieListDetailOutputInteractorProtocol: class {
+protocol MovieListDetailOutputInteractorProtocol: AnyObject {
     // Interactor -> PresenterOutput
     func onMoviesRequestSuccess(data: [Movie])
     func onMoviesRequestFailure()
 }
 
-protocol MovieListDetailRouterProtocol: class {
+protocol MovieListDetailRouterProtocol: AnyObject {
     //Presenter -> Wireframe
     static func createModule() -> UIViewController
+    func gotoMovieDetail(view: UIViewController, idMovie: Int)
 }

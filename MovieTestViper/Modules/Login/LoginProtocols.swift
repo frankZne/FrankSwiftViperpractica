@@ -8,7 +8,7 @@
 import UIKit
 
 
-protocol LoginViewProtocol: class {
+protocol LoginViewProtocol: AnyObject {
     // Presenter -> View
     //func showLoader()
     //func hideLoader()
@@ -17,27 +17,29 @@ protocol LoginViewProtocol: class {
     func loginViewFailure(message: String)
 }
 
-protocol LoginPresenterProtocol: class {
+protocol LoginPresenterProtocol: AnyObject {
     // View -> Presenter
     var interactor: LoginInteractorProtocol? {get set}
     var view: LoginViewProtocol? {get set}
     var router: LoginRouterProtocol? {get set}
     func getLogin(username: String, password: String)
+    func goToMovieList()
 }
 
-protocol LoginInteractorProtocol: class {
+protocol LoginInteractorProtocol: AnyObject {
     // Presenter -> Interactor
     var presenter: LoginOutputInteractorProtocol? {get set}
     func requestLogin(username: String, password: String)
 }
 
-protocol LoginOutputInteractorProtocol: class {
+protocol LoginOutputInteractorProtocol: AnyObject {
     // Interactor -> PresenterOutput
     func onLoginSuccess()
     func onLoginFailure(message: String)
 }
 
-protocol LoginRouterProtocol: class {
+protocol LoginRouterProtocol: AnyObject {
     //Presenter -> Wireframe
     static func createModule() -> UIViewController
+    func goToMovieListDetail(view: UIViewController)
 }
